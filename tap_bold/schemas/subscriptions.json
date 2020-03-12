@@ -1,0 +1,300 @@
+{
+  "type": ["object"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": ["integer"]
+    },
+    "shopify_customer_id": {
+      "type": ["null", "integer"]
+    },
+    "interval_number": {
+      "type": ["null", "integer"]
+    },
+    "interval_type_id": {
+      "type": ["null", "integer"]
+    },
+    "first_name": {
+      "type": ["null", "string"]
+    },
+    "last_name": {
+      "type": ["null", "string"]
+    },
+    "customer_email": {
+      "type": ["null", "string"]
+    },
+    "address1": {
+      "type": ["null", "string"]
+    },
+    "address2": {
+      "type": ["null", "string"]
+    },
+    "country": {
+      "type": ["null", "string"]
+    },
+    "province": {
+      "type": ["null", "string"]
+    },
+    "city": {
+      "type": ["null", "string"]
+    },
+    "zip": {
+      "type": ["null", "string"]
+    },
+    "phone": {
+      "type": ["null", "string"]
+    },
+    "company": {
+      "type": ["null", "string"]
+    },
+    "purchase_date": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "delete_date": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "last_ship_date": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "next_ship_date": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "active": {
+      "type": ["null", "boolean"]
+    },
+    "is_paused": {
+      "type": ["null", "boolean"]
+    },
+    "discount_code_id": {
+      "type": ["null", "integer"]
+    },
+    "cancel_discount_code_id": {
+      "type": ["null", "integer"]
+    },
+    "billing_first_name": {
+      "type": ["null", "string"]
+    },
+    "billing_last_name": {
+      "type": ["null", "string"]
+    },
+    "billing_address1": {
+      "type": ["null", "string"]
+    },
+    "billing_address2": {
+      "type": ["null", "string"]
+    },
+    "billing_country": {
+      "type": ["null", "string"]
+    },
+    "billing_province": {
+      "type": ["null", "string"]
+    },
+    "billing_city": {
+      "type": ["null", "string"]
+    },
+    "billing_zip": {
+      "type": ["null", "string"]
+    },
+    "billing_phone": {
+      "type": ["null", "string"]
+    },
+    "billing_company": {
+      "type": ["null", "string"]
+    },
+    "notes": {
+      "type": ["null", "string"]
+    },
+    "shopify_order_tags": {
+      "type": ["null", "string"]
+    },
+    "taxes_included": {
+      "type": ["null", "integer"]
+    },
+    "tax_shipping": {
+      "type": ["null", "integer"]
+    },
+    "currency": {
+      "type": ["null", "string"]
+    },
+    "currency_exchange_rate": {
+      "type": ["null", "number"]
+    },
+    "currency_format": {
+      "type": ["null", "string"]
+    },
+    "attributes": {
+      "type": ["null", "string"]
+    },
+    "is_cancellable": {
+      "type": ["null", "boolean"]
+    },
+    "cancel_reason": {
+      "type": ["null", "string"]
+    },
+    "reactivatable": {
+      "type": ["null", "boolean"]
+    },
+    "next_active_ship_date": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "billing_plan_id": {
+      "type": ["null", "integer"]
+    },
+    "order_day": {
+      "type": ["null", "integer"]
+    },
+    "last_updated": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "order_products": {
+      "type": ["null", "array"],
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": ["null", "integer"]
+          },
+          "bold_order_id": {
+            "type": ["null", "integer"]
+          },
+          "product_id": {
+            "type": ["null", "integer"]
+          },
+          "variant_id": {
+            "type": ["null", "integer"]
+          },
+          "price": {
+            "type": ["null", "number"]
+          },
+          "converted_price": {
+            "type": ["null", "integer"]
+          },
+          "quantity": {
+            "type": ["null", "integer"]
+          },
+          "gram": {
+            "type": ["null", "number"]
+          },
+          "product_title": {
+            "type": ["null", "string"]
+          },
+          "variant_title": {
+            "type": ["null", "string"]
+          },
+          "status": {
+            "type": ["null", "integer"]
+          },
+          "price_changed": {
+            "type": ["null", "integer"]
+          },
+          "shopify_price": {
+            "type": ["null", "number"]
+          },
+          "shopify_new_price": {
+            "type": ["null", "number"]
+          },
+          "sku": {
+            "type": ["null", "string"]
+          },
+          "shopify_inventory": {
+            "type": ["null", "integer"]
+          },
+          "inventory_management": {
+            "type": ["null", "string"]
+          },
+          "taxable": {
+            "type": ["null", "integer"]
+          },
+          "properties": {
+            "type": ["null", "string"]
+          },
+          "vendor": {
+            "type": ["null", "string"]
+          },
+          "is_active": {
+            "type": ["null", "boolean"]
+          },
+          "last_updated": {
+            "type": ["null", "string"],
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "total_recurrences": {
+      "type": ["null", "integer"]
+    },
+    "recurrence_count": {
+      "type": ["null", "integer"]
+    },
+    "one_charge_only": {
+      "type": ["null", "integer"]
+    },
+    "recurr_after_limit": {
+      "type": ["null", "integer"]
+    },
+    "order_exceptions": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "string"],
+        "format": "date-time"
+      }
+    },
+    "order_logs": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "object"],
+        "properties": {
+          "shopify_order_num": {
+            "type": ["null", "string"]
+          },
+          "shopify_order_token": {
+            "type": ["null", "string"]
+          }
+        }
+      }
+    },
+    "order_log_failed_transactions": {
+      "type": ["null", "array"],
+      "items": {
+        "type": ["null", "object"],
+        "properties": {
+          "id": {
+            "type": ["null", "integer"]
+          },
+          "bold_order_id": {
+            "type": ["null", "integer"]
+          },
+          "type": {
+            "type": ["null", "string"]
+          },
+          "code": {
+            "type": ["null", "string"]
+          },
+          "message": {
+            "type": ["null", "string"]
+          },
+          "transaction_date": {
+            "type": ["null", "string"],
+            "format": "date-time"
+          },
+          "price": {
+            "type": ["null", "number"]
+          },
+          "tax": {
+            "type": ["null", "number"]
+          },
+          "shipping": {
+            "type": ["null", "number"]
+          }
+        }
+      }
+    }
+  }
+}

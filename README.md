@@ -11,7 +11,3 @@ This tap:
   - [Subscriptions](https://docs.boldapps.net/subscriptions/integration/index.html#subscriptions)
 - Outputs the schema for the resource (TODO: missing a few fields)
 - Replicates the whole resource since Bold doesn't allow queries by last_updated
-
----
-
-Copyright &copy; 2020 Fabric, Inc

@@ -115,6 +115,31 @@ def transform_product(product):
     return product
 
 
+def transform_order_log_failed_transaction(transaction):
+    transaction['transaction_date'] = bold_strptime(
+        transaction['transaction_date'],
+        BOLD_DATE_FORMAT
+    ).strftime(ISO_DATE_TIME_FORMAT)
+
+    if transaction['shipping'] is not None:
+        transaction['shipping'] = float(transaction['shipping'])
+
+    if transaction['price'] is not None:
+        transaction['price'] = float(transaction['price'])
+
+    if transaction['tax'] is not None:
+        transaction['tax'] = float(transaction['tax'])
+
+    del transaction['shop_app_id']
+    del transaction['param']
+    del transaction['error']
+    del transaction['email_sent']
+    del transaction['archived']
+    del transaction['share_shipping']
+
+    return transaction
+
+
 def transform(row):
     if row['delete_date'] is not None:
         row['delete_date'] = bold_strptime(row['purchase_date'], BOLD_DATE_FORMAT).strftime(ISO_DATE_TIME_FORMAT)
@@ -143,6 +168,9 @@ def transform(row):
         row['recurrence_count'] = row['order_fixed_recurrences']['recurrence_count']
         row['one_charge_only'] = row['order_fixed_recurrences']['one_charge_only']
         row['recurr_after_limit'] = row['order_fixed_recurrences']['recurr_after_limit']
+
+    if row['order_log_failed_transactions'] is not None:
+        row['order_log_failed_transactions'] = list(map(transform_order_log_failed_transaction, row['order_log_failed_transactions']))
 
     del row['order_fixed_recurrences']
     del row['order_shipping_rate_exceptions']

@@ -142,7 +142,7 @@ def transform_order_log_failed_transaction(transaction):
 
 def transform(row):
     if row['delete_date'] is not None:
-        row['delete_date'] = bold_strptime(row['purchase_date'], BOLD_DATE_FORMAT).strftime(ISO_DATE_TIME_FORMAT)
+        row['delete_date'] = bold_strptime(row['delete_date'], BOLD_DATE_FORMAT).strftime(ISO_DATE_TIME_FORMAT)
 
     row['last_updated'] = bold_strptime(row['last_updated'], BOLD_DATE_TIME_FORMAT).strftime(ISO_DATE_TIME_FORMAT)
     row['currency_exchange_rate'] = float(row['currency_exchange_rate'])

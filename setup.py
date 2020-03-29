@@ -23,7 +23,7 @@ setup(
     },
     keywords=['SINGER', 'TAP'],
     include_package_data=True,
-    download_url='https://github.com/oriskincare/tap-bold/archive/v0.1.1.tar.gz',
+    download_url='https://github.com/oriskincare/tap-bold/archive/v0.2.0.tar.gz',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

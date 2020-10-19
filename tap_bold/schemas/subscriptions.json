@@ -138,6 +138,10 @@
     "reactivatable": {
       "type": ["null", "boolean"]
     },
+    "paused_date": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
     "next_active_ship_date": {
       "type": ["null", "string"],
       "format": "date-time"

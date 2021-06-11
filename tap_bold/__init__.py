@@ -163,6 +163,9 @@ def transform(row):
     if row['last_ship_date'] is not None:
         row['last_ship_date'] = bold_strptime(row['last_ship_date'], BOLD_DATE_FORMAT).strftime(ISO_DATE_TIME_FORMAT)
 
+    if row['paused_date'] is not None:
+        row['paused_date'] = bold_strptime(row['paused_date'], BOLD_DATE_FORMAT).strftime(ISO_DATE_TIME_FORMAT)
+
     if row['order_fixed_recurrences'] is not None:
         row['total_recurrences'] = row['order_fixed_recurrences']['total_recurrences']
         row['recurrence_count'] = row['order_fixed_recurrences']['recurrence_count']

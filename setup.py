@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='tap-bold',
-    version='0.4.0',
+    version='0.5.1',
     license='agpl-3.0',
     description='Singer.io tap for extracting data from Bold Recurring Orders Subscriptions API',
     author='Ori Ben Aharon',
@@ -23,7 +23,7 @@ setup(
     },
     keywords=['SINGER', 'TAP'],
     include_package_data=True,
-    download_url='https://github.com/oriskincare/tap-bold/archive/v0.3.0.tar.gz',
+    download_url='https://github.com/oriskincare/tap-bold/archive/v0.5.1.tar.gz',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
